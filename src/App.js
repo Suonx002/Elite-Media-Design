@@ -1,28 +1,31 @@
 import React from 'react';
 
-import Navbar from './components/Navbar';
-
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import theme from './styles/Theme';
+
+import Homepage from './pages/Homepage';
+import Navbar from './components/Navbar';
 
 import Hero from './assets/hero.jpg';
 
 const useStyles = makeStyles((theme) => ({
-  app: {
+  landingContainer: {
     background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Hero}) no-repeat center center/cover`,
-    height: '100vh',
+    minHeight: '100vh',
     width: '100vw',
+    overflow: 'hidden',
   },
 }));
 
 function App() {
   const classes = useStyles();
   return (
-    <div className={classes.app}>
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <div className={classes.landingContainer}>
         <Navbar />
-      </ThemeProvider>
-    </div>
+        <Homepage />
+      </div>
+    </ThemeProvider>
   );
 }
 

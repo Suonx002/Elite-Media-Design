@@ -53,7 +53,7 @@ const Navbar = () => {
                 color='secondary'
                 className={classes.rightMenuItemBtn}
                 style={{ color: theme.palette.common.white }}>
-                Free Estimate
+                Get In Touch
               </Button>
             </li>
           </ul>
