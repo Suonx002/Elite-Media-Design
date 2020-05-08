@@ -5,6 +5,7 @@ import theme from './styles/Theme';
 
 import Homepage from './pages/Homepage';
 import Navbar from './components/Navbar';
+import CompanyBanner from './components/CompanyBanner';
 
 import Hero from './assets/hero.jpg';
 
@@ -25,6 +26,7 @@ function App() {
         <Navbar />
         <Homepage />
       </div>
+      <CompanyBanner />
     </ThemeProvider>
   );
 }
