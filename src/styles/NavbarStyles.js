@@ -11,6 +11,9 @@ export default makeStyles((theme) => ({
     height: 75,
     width: 75,
     padding: 0,
+    '&:hover': {
+      backgroundColor: 'transparent',
+    },
   },
   logo: {
     width: '100%',
@@ -27,5 +30,8 @@ export default makeStyles((theme) => ({
     '&:not(:last-child)': {
       marginRight: '0.75rem',
     },
+  },
+  rightMenuItemBtn: {
+    textTransform: 'none',
   },
 }));
