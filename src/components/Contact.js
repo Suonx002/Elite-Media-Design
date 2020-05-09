@@ -20,7 +20,7 @@ const coordinate = [-93.2740985, 44.9761901];
 const Contact = () => {
   const classes = useStyles();
   return (
-    <section className={classes.contactContainer}>
+    <section className={classes.contactContainer} id='contact'>
       <Container maxWidth='lg'>
         <Typography variant='h2' className={classes.contactHeading}>
           Contact
@@ -35,7 +35,11 @@ const Contact = () => {
             <Grid item className={classes.contactItem}>
               <Typography variant='body1'>
                 Phone:{' '}
-                <a href='tel:1-763-123-1234' className={classes.contactLink}>
+                <a
+                  href='tel:1-763-123-1234'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  className={classes.contactLink}>
                   763-123-1234
                 </a>
               </Typography>
@@ -44,6 +48,8 @@ const Contact = () => {
               <Typography variant='body1'>
                 Email:{' '}
                 <a
+                  rel='noopener noreferrer'
+                  target='_blank'
                   href='mailto:info@elitemediadesign.com'
                   className={classes.contactLink}>
                   info@elitemediadesign.com

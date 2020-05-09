@@ -31,7 +31,7 @@ function App() {
   return (
     <div className={classes.app}>
       <ThemeProvider theme={theme}>
-        <main className={classes.landingContainer}>
+        <main className={classes.landingContainer} id='home'>
           <Navbar />
           <Homepage />
         </main>

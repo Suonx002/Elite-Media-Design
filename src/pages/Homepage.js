@@ -19,6 +19,10 @@ const Homepage = () => {
           <Button
             variant='contained'
             color='primary'
+            rel='noopener noreferrer'
+            target='_blank'
+            component='a'
+            href='mailto:info@elitemediadesign.com'
             className={classes.getInTouchBtn}>
             Get In Touch
           </Button>

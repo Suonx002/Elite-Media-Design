@@ -10,7 +10,7 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.aboutContainer}>
+    <div className={classes.aboutContainer} id='about'>
       <Container maxWidth='lg'>
         <Typography variant='h2' className={classes.aboutHeading}>
           About Us

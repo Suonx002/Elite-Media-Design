@@ -45,7 +45,7 @@ const servicesList = [
 const Services = () => {
   const classes = useStyles();
   return (
-    <section className={classes.serviceContainer}>
+    <section className={classes.serviceContainer} id='services'>
       <Container maxWidth='lg'>
         <Typography variant='h2' className={classes.serviceHeading}>
           Services

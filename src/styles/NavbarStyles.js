@@ -35,4 +35,55 @@ export default makeStyles((theme) => ({
   rightMenuItemBtn: {
     textTransform: 'none',
   },
+  drawerMenu: {
+    marginLeft: 'auto',
+  },
+  drawerMenuIconContainer: {
+    padding: 0,
+    height: 35,
+    width: 35,
+    '&:hover': {
+      backgroundColor: 'transparent',
+    },
+  },
+  drawerMenuIcon: {
+    width: '100%',
+    height: '100%',
+    color: theme.palette.common.white,
+  },
+  listContainer: {
+    width: 200,
+    backgroundColor: theme.palette.secondary.main,
+  },
+  listItem: {
+    textAlign: 'center',
+    color: theme.palette.common.white,
+  },
+  closeContainer: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+  },
+  closeIconContainer: {
+    width: 35,
+    height: 35,
+  },
+  iconContainer: {
+    width: '100%',
+    height: '100%',
+    color: theme.palette.primary.main,
+  },
+  drawerGetInTouchBtn: {
+    textAlign: 'center',
+    color: theme.palette.common.white,
+    backgroundColor: theme.palette.primary.main,
+    '&:hover': {
+      backgroundColor: theme.palette.primary.light,
+    },
+    '&:active': {
+      backgroundColor: theme.palette.primary.light,
+    },
+    '&:focus': {
+      backgroundColor: theme.palette.primary.light,
+    },
+  },
 }));
