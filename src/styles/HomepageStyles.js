@@ -17,7 +17,7 @@ export default makeStyles((theme) => ({
   },
   getInTouchBtn: {
     color: theme.palette.common.white,
-
+    textTransform: 'none',
     padding: '0.8rem 2rem',
   },
 }));

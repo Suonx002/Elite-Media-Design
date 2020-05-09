@@ -14,7 +14,8 @@ export default makeStyles((theme) => ({
     padding: '1rem 0 1rem 1rem',
   },
   aboutHeading: {
-    marginBottom: '2rem',
+    marginBottom: '1rem',
+    textAlign: 'center',
   },
   aboutText: {
     marginBottom: '1rem',

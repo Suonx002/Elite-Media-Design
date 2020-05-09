@@ -10,6 +10,7 @@ import CompanyBanner from './components/CompanyBanner';
 import Hero from './assets/hero.jpg';
 import About from './components/About';
 import Services from './components/Services';
+import SocialFeed from './components/SocialFeed';
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -35,6 +36,7 @@ function App() {
         <CompanyBanner />
         <About />
         <Services />
+        <SocialFeed />
       </ThemeProvider>
     </div>
   );
