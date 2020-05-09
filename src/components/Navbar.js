@@ -11,7 +11,7 @@ const Navbar = () => {
   const theme = useTheme();
 
   return (
-    <>
+    <nav>
       <AppBar
         position='fixed'
         className={classes.appbar}
@@ -60,7 +60,7 @@ const Navbar = () => {
         </Toolbar>
       </AppBar>
       <div className={classes.marginToolbar} />
-    </>
+    </nav>
   );
 };
 

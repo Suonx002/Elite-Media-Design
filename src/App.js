@@ -12,6 +12,7 @@ import About from './components/About';
 import Services from './components/Services';
 import SocialFeed from './components/SocialFeed';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -30,15 +31,16 @@ function App() {
   return (
     <div className={classes.app}>
       <ThemeProvider theme={theme}>
-        <div className={classes.landingContainer}>
+        <main className={classes.landingContainer}>
           <Navbar />
           <Homepage />
-        </div>
+        </main>
         <CompanyBanner />
         <About />
         <Services />
         <SocialFeed />
         <Contact />
+        <Footer />
       </ThemeProvider>
     </div>
   );

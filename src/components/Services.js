@@ -45,7 +45,7 @@ const servicesList = [
 const Services = () => {
   const classes = useStyles();
   return (
-    <div className={classes.serviceContainer}>
+    <section className={classes.serviceContainer}>
       <Container maxWidth='lg'>
         <Typography variant='h2' className={classes.serviceHeading}>
           Services
@@ -71,7 +71,7 @@ const Services = () => {
           ))}
         </Grid>
       </Container>
-    </div>
+    </section>
   );
 };
 

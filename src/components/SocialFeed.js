@@ -47,7 +47,7 @@ const SocialFeed = () => {
   }, []);
 
   return (
-    <div className={classes.socialFeedContainer}>
+    <section className={classes.socialFeedContainer}>
       <Container maxWidth='lg'>
         <Typography variant='h2' className={classes.socialFeedHeading}>
           Instagram Social Feed
@@ -132,7 +132,7 @@ const SocialFeed = () => {
           </div>
         )}
       </Container>
-    </div>
+    </section>
   );
 };
 

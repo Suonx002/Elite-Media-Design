@@ -37,7 +37,7 @@ const CompanyBrands = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.companyContainer}>
+    <section className={classes.companyContainer}>
       <Container maxWidth='lg'>
         <Typography variant='h3' className={classes.companyHeading}>
           Trusted by the world's leading companies
@@ -56,7 +56,7 @@ const CompanyBrands = () => {
           ))}
         </Grid>
       </Container>
-    </div>
+    </section>
   );
 };
 

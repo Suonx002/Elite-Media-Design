@@ -20,7 +20,7 @@ const coordinate = [-93.2740985, 44.9761901];
 const Contact = () => {
   const classes = useStyles();
   return (
-    <div className={classes.contactContainer}>
+    <section className={classes.contactContainer}>
       <Container maxWidth='lg'>
         <Typography variant='h2' className={classes.contactHeading}>
           Contact
@@ -127,7 +127,7 @@ const Contact = () => {
           </Grid>
         </Grid>
       </Container>
-    </div>
+    </section>
   );
 };
 
