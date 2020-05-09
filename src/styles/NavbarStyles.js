@@ -57,7 +57,7 @@ export default makeStyles((theme) => ({
   },
   listItem: {
     textAlign: 'center',
-    color: theme.palette.common.white,
+    color: theme.palette.primary.main,
   },
   closeContainer: {
     display: 'flex',
