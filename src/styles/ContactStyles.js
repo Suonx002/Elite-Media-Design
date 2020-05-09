@@ -8,10 +8,10 @@ export default makeStyles((theme) => ({
   },
   contactHeading: {
     textAlign: 'center',
-    marignBottom: '1rem',
   },
   contactItemContainer: {
     padding: '1rem',
+    marginTop: '1rem',
   },
   contactItem: {
     marginBottom: '1rem',
@@ -37,5 +37,8 @@ export default makeStyles((theme) => ({
   contactBtn: {
     textTransform: 'none',
     padding: '0.8rem 2.5rem',
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+    },
   },
 }));
