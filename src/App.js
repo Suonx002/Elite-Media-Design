@@ -11,6 +11,7 @@ import Hero from './assets/hero.jpg';
 import About from './components/About';
 import Services from './components/Services';
 import SocialFeed from './components/SocialFeed';
+import Contact from './components/Contact';
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -37,6 +38,7 @@ function App() {
         <About />
         <Services />
         <SocialFeed />
+        <Contact />
       </ThemeProvider>
     </div>
   );

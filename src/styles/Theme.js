@@ -46,4 +46,11 @@ export default createMuiTheme({
       lineHeight: 1.5,
     },
   },
+  overrides: {
+    MuiFormLabel: {
+      root: {
+        color: defaultTheme.palette.common.white,
+      },
+    },
+  },
 });

@@ -24,7 +24,7 @@ const SocialFeed = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const res = await axios.get('https://www.instagram.com/nfl/?__a=1ss');
+      const res = await axios.get('https://www.instagram.com/nfl/?__a=1');
       const data = await res.data.graphql.user;
       setFeeds((prevState) => [...prevState, data]);
       setLoading(false);
