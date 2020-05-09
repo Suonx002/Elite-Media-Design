@@ -7,6 +7,7 @@ import {
   Typography,
   Button,
   useMediaQuery,
+  CircularProgress,
 } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import useStyles from '../styles/SocialFeedStyles';
@@ -16,17 +17,20 @@ const SocialFeed = () => {
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const [loading, setLoading] = useState(false);
   const [feeds, setFeeds] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const fetchData = async () => {
     try {
       setLoading(true);
-      const res = await axios.get('https://www.instagram.com/nfl/?__a=1');
+      const res = await axios.get('https://www.instagram.com/nfl/?__a=1ss');
       const data = await res.data.graphql.user;
       setFeeds((prevState) => [...prevState, data]);
+      setLoading(false);
     } catch (err) {
-      console.log(err);
+      setLoading(false);
+      setError(err.message);
     }
   };
 
@@ -42,14 +46,14 @@ const SocialFeed = () => {
     //eslint-disable-next-line
   }, []);
 
-  console.log(feeds);
   return (
     <div className={classes.socialFeedContainer}>
       <Container maxWidth='lg'>
         <Typography variant='h2' className={classes.socialFeedHeading}>
           Instagram Social Feed
         </Typography>
-        {feeds.length > 0 &&
+
+        {loading === false && feeds.length > 0 ? (
           feeds.map((feed) => (
             <Grid container key={feed.id}>
               <Grid
@@ -117,7 +121,16 @@ const SocialFeed = () => {
                 </Grid>
               </Grid>
             </Grid>
-          ))}
+          ))
+        ) : loading === false && error.length > 0 ? (
+          <Typography variant='body1' className={classes.errorText}>
+            {error}
+          </Typography>
+        ) : (
+          <div className={classes.loadingSpinner}>
+            <CircularProgress color='secondary' size={65} />
+          </div>
+        )}
       </Container>
     </div>
   );

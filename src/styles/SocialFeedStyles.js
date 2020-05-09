@@ -36,4 +36,14 @@ export default makeStyles((theme) => ({
     color: theme.palette.common.white,
     textTransform: 'none',
   },
+  loadingSpinner: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '1rem',
+  },
+  errorText: {
+    textAlign: 'center',
+    marginTop: '2rem',
+  },
 }));
