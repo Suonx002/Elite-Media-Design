@@ -9,6 +9,7 @@ import CompanyBanner from './components/CompanyBanner';
 
 import Hero from './assets/hero.jpg';
 import About from './components/About';
+import Services from './components/Services';
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -33,6 +34,7 @@ function App() {
         </div>
         <CompanyBanner />
         <About />
+        <Services />
       </ThemeProvider>
     </div>
   );
