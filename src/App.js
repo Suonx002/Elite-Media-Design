@@ -10,8 +10,11 @@ import CompanyBanner from './components/CompanyBanner';
 import Hero from './assets/hero.jpg';
 
 const useStyles = makeStyles((theme) => ({
+  app: {
+    overflow: 'hidden',
+  },
   landingContainer: {
-    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Hero}) no-repeat center center/cover`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${Hero}) no-repeat center center/cover`,
     minHeight: '100vh',
     width: '100vw',
     overflow: 'hidden',
@@ -21,13 +24,15 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const classes = useStyles();
   return (
-    <ThemeProvider theme={theme}>
-      <div className={classes.landingContainer}>
-        <Navbar />
-        <Homepage />
-      </div>
-      <CompanyBanner />
-    </ThemeProvider>
+    <div className={classes.app}>
+      <ThemeProvider theme={theme}>
+        <div className={classes.landingContainer}>
+          <Navbar />
+          <Homepage />
+        </div>
+        <CompanyBanner />
+      </ThemeProvider>
+    </div>
   );
 }
 

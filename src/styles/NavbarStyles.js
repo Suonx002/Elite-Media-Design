@@ -11,6 +11,7 @@ export default makeStyles((theme) => ({
     height: 75,
     width: 75,
     padding: 0,
+    margin: '0.5rem 0',
     '&:hover': {
       backgroundColor: 'transparent',
     },

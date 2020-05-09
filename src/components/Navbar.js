@@ -16,8 +16,7 @@ const Navbar = () => {
         position='fixed'
         className={classes.appbar}
         elevation={0}
-        // color='transparent'
-      >
+        color='transparent'>
         <Toolbar>
           <IconButton className={classes.logoContainer} disableRipple>
             <img

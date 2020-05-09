@@ -37,15 +37,11 @@ const CompanyBrands = () => {
   const classes = useStyles();
 
   return (
-    <Container maxWidth='lg'>
+    <Container maxWidth='lg' className={classes.companyContainer}>
       <Typography variant='h3' className={classes.companyHeading}>
         Trusted by the world's leading companies
       </Typography>
-      <Grid
-        container
-        className={classes.companyContainer}
-        justify='center'
-        alignItems='center'>
+      <Grid container justify='center' alignItems='center'>
         {companyBanners.map((company) => (
           <Grid item key={company.name} className={classes.companyItem}>
             <IconButton disabled>

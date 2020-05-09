@@ -30,6 +30,7 @@ export default createMuiTheme({
       fontSize: '1.25rem',
       fontWeight: 400,
       lineHeight: 1.5,
+      color: primaryColor,
     },
     body1: {
       fontFamily: 'Montserrat, sans-serif',

@@ -1,8 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
+  companyContainer: {
+    marginBottom: '3rem',
+  },
   companyHeading: {
-    margin: '2rem 0',
+    margin: '3rem 0 2rem',
     textAlign: 'center',
   },
   companyItem: {
