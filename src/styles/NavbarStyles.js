@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
     ...theme.mixins.toolbar,
   },
   appbar: {
-    backgroundColor: theme.palette.common.white,
+    // backgroundColor: theme.palette.common.white,
   },
   logoContainer: {
     height: 75,

@@ -16,7 +16,8 @@ const Navbar = () => {
         position='fixed'
         className={classes.appbar}
         elevation={0}
-        color='transparent'>
+        // color='transparent'
+        color='secondary'>
         <Toolbar>
           <IconButton className={classes.logoContainer} disableRipple>
             <img
@@ -49,7 +50,7 @@ const Navbar = () => {
             <li className={classes.rightMenuItem}>
               <Button
                 variant='contained'
-                color='secondary'
+                color='primary'
                 className={classes.rightMenuItemBtn}
                 style={{ color: theme.palette.common.white }}>
                 Get In Touch

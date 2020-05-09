@@ -18,7 +18,7 @@ const Homepage = () => {
         <Grid item>
           <Button
             variant='contained'
-            color='secondary'
+            color='primary'
             className={classes.getInTouchBtn}>
             Get In Touch
           </Button>

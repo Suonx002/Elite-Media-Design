@@ -37,24 +37,26 @@ const CompanyBrands = () => {
   const classes = useStyles();
 
   return (
-    <Container maxWidth='lg' className={classes.companyContainer}>
-      <Typography variant='h3' className={classes.companyHeading}>
-        Trusted by the world's leading companies
-      </Typography>
-      <Grid container justify='center' alignItems='center'>
-        {companyBanners.map((company) => (
-          <Grid item key={company.name} className={classes.companyItem}>
-            <IconButton disabled>
-              <img
-                src={company.icon}
-                alt={company.name}
-                className={classes.iconImage}
-              />
-            </IconButton>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+    <div className={classes.companyContainer}>
+      <Container maxWidth='lg'>
+        <Typography variant='h3' className={classes.companyHeading}>
+          Trusted by the world's leading companies
+        </Typography>
+        <Grid container justify='center' alignItems='center'>
+          {companyBanners.map((company) => (
+            <Grid item key={company.name} className={classes.companyItem}>
+              <IconButton disabled>
+                <img
+                  src={company.icon}
+                  alt={company.name}
+                  className={classes.iconImage}
+                />
+              </IconButton>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </div>
   );
 };
 
